@@ -19,6 +19,7 @@ head()
 tail()
 
 # Data Manipulation and Review -----------------------------------------------------
+library(plyr) # 10大R必學package之一
 
 ## 先針對NA資料作處裡
 na.omitmit()
@@ -34,7 +35,7 @@ aggregate()
 merge()
 reshape()
 
-
+# 資料簡單分析
 summary()
 aggregate() #aggregate(Sepal.Length ~ Species,summary,data=iris)
             #針對不同種類的鳶尾花跑出Sepal.Length 的summary
@@ -73,7 +74,6 @@ assocplot()
 mosaicplot()
 heatmap()
 
-
 # 利用scatterplot3d包
 library(scatterplot3d)
 scatterplot3d() # scatterplot3d(iris$Petal.Width,iris$Sepal.Length,iris$Sepal.Width)
@@ -102,8 +102,6 @@ win.metafilee()
 jpeg()
 bmp()
 png()
-
-
 
 # 備註 ----------------------------------------------------------------------
 
