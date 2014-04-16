@@ -114,4 +114,6 @@ example()
 ??seq
 # 對某些保留字的用法不會用的話
 ?"if" # for example
+# 開啟線上幫助文檔
+help.start()
 
