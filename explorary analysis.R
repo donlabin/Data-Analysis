@@ -19,6 +19,7 @@ head()
 tail()
 
 # Data Manipulation and Review -----------------------------------------------------
+
 library(plyr) # 10大R必學package之一
 
 ## 先針對NA資料作處裡
