@@ -15,6 +15,8 @@ names()
 str()
 attributes()
 class()
+mode()
+typeof()
 head()
 tail()
 
