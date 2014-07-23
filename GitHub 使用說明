@@ -4,6 +4,15 @@
 >從Rstudio中選new project >> create project from version control >> 接著從GitHub網站上copy http的網址 >> 建立新專案即可
 上述可參考:https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN?version=0.98.501&mode=desktop
 
+如何新增資料夾(無法從Rstudio新增並且同步到GitHub)
+>>須透過edit 檔案，並且在檔案路徑加上 folder name/  ，新的資料夾中至少要有一個檔案，否則資料夾無法存在
+
+如果在GitHub上建立了branch，並且在GitHub上刪除branch，能夠同步到Rstudio嗎?
+>>不行
+
+如果在GitHub刪除整個Repository,能否透過pull request刪除local電腦中的專案?
+>>也是不行喔!!!
+
 #關於上傳檔案的部分
 須在master這個branch做程式碼變更，改了內容之後，
 #先commit，接著再push，這樣就可以同步更新GitHub上面的檔案了
