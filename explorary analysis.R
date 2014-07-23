@@ -57,17 +57,25 @@ table()
 plot() #plot(jitter(iris$Sepal.Length), jitter(iris$Sepal.Width))
        #透過jitter( )增加一些noise來讓重複的點看起來不重複，但此圖並未針對不同的species畫出不同的legend
 
+       #以下針對不同Species畫出不同的legend
+       #plot(jitter(iris$Sepal.Length), jitter(iris$Sepal.Width),
+       #     col=c(1,2,3)[iris$Species],pch=c(1,2,3)[iris$Species])
+
+       #為上述的圖形加上圖例
+       #legend(x=6.5,y=4.4,legend=c("setosa","versicolor","virginica"),
+       #     col=c(1,2,3),pch=c(1,2,3))
+
 pairs() # matrix scatter chart
 barplot()
 pie()
 dotchart() # scatter chart
-hist()
-boxplot()
-qqnorm()
+hist() #直方圖，適合畫x,y軸都是數值資料時使用
+boxplot() #盒須圖，適合畫有類別資料及數值資料時使用
+qqnorm() #用來檢測常態性質
 qqplott()
 qqline()
 coplot() # Bi-variate plot
-contour()
+contour() 
 filled.contour()
 sunflowerplot()
 interaction.plot()
@@ -106,6 +114,10 @@ jpeg()
 bmp()
 png()
 
+# 畫圖時常常用到的設定
+par(mfrow=c(m,n)) # 將當前窗口分割為m x n個窗口，m為列，n為欄
+dev.off() # 將圖形窗口關閉，會關閉所有圖型
+
 # 備註 ----------------------------------------------------------------------
 
 # 若忘記函數怎麼用，括號裡用函數名稱
@@ -118,3 +130,6 @@ example()
 ?"if" # for example
 # 開啟線上幫助文檔
 help.start()
+
+
+
