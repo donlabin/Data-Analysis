@@ -119,4 +119,5 @@ example()
 # 開啟線上幫助文檔
 help.start()
 
-#test 20140723....
+#做個註記，以免之後又忘記，須在master這個branch做程式碼變更，改了內容之後，
+#先commit，接著再push，這樣就可以同步更新GitHub上面的檔案了
