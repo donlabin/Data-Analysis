@@ -121,3 +121,5 @@ help.start()
 
 #做個註記，以免之後又忘記，須在master這個branch做程式碼變更，改了內容之後，
 #先commit，接著再push，這樣就可以同步更新GitHub上面的檔案了
+#另外，可以從GitHub上新增檔案，然後將檔案下載到Rstidio，但如果檔案是從GitHub
+#新增的，那麼便只能從GitHub上做一個刪除的更新
