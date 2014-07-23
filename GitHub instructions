@@ -3,6 +3,7 @@
 檔名盡量不要用中文，否則push及pull的時候會怪怪的
 
 Git 中文參考:http://git-scm.com/book/zh-tw
+             http://ihower.tw/git/
 
 關於建立一個能夠與GitHub連動的新Rstudio專案(前提是要先下載關於GitHub的軟體:http://msysgit.github.io/)
 >從Rstudio中選new project >> create project from version control >> 接著從GitHub網站上copy http的網址 >> 建立新專案即可
