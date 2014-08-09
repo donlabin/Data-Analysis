@@ -17,14 +17,30 @@ image/工作空間,可儲存變數
 
 vector 是R語言的心臟,需有相同的mode
 
+R語言的三個重要面向:
+  1.Recycling
+  2.Filtering (在R中最常使用的)
+  3.Vectorization(vector in,vector out)
 
+資料類型:
+  1.vector;scalar也被視為vector
+  2.character string
+  3.matrices(Much of R’s power comes from the various operations 
+             you can perform on matrices;矩陣乘法透過"%*%")
+  4.
+
+  
+
+NA and NULL #計算平均數時，NULL會被跳過，因為被當作不存在
+#NA則不會，因此計算不出來
+
+seq() #產生向量,ex:seq(from=12,to=30,by=3),seq(from=1.1,to=2,length=10)
 example(line) #讓你知道函數大概怎麼用
 args(plot.default) #可看到一個函數中的參數
 rep(x,times) #rep(c(5,12,13),3),rep(c(5,12,13),each=2)
 any() #x <- 1:10;any(x > 8)
 all() #x <- 1:10;all(x > 8)
-NA and NULL #計算平均數時，NULL會被跳過，因為被當作不存在
-            #NA則不會，因此計算不出來
+
 
 subset() #透過此法篩選出來的結果可排除掉NA
 which() #找出滿足條件的位置 z <- c(5,2,-3,8);which(z*z > 8) 得到1,3,4
@@ -36,7 +52,7 @@ ifelse() #x <- 1:10;y <- ifelse(x %% 2 == 0,5,12)
          # ifelse(g=="M",1,ifelse(g=="F",2,3))
          # 會得到 1 2 2 3 1 1 2
 
-identical(x,y)
+identical(x,y) #測試兩個object是否相等
 
 paste() #string manipulation
 strsplit() #string manipulation
