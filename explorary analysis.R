@@ -3,11 +3,11 @@ read.csv() #讀csv檔
 read.table() #讀文字檔
 read.delim("clipboard") #以複製的方式快速讀檔，可參考我最強25檔的R script
 library(RODBC) # 若資料要從xls檔讀取的話，須先安裝此包，以下5行為範例
-filename <- "data/dummmyData.xls"
-xlsFile <- odbcConnectExcel(filename, readOnly = FALSE)
-sqlSave(xlsFile, a, rownames = FALSE)
-b <- sqlFetch(xlsFile, "a")
-odbcCloseAll()
+  filename <- "data/dummmyData.xls"
+  xlsFile <- odbcConnectExcel(filename, readOnly = FALSE)
+  sqlSave(xlsFile, a, rownames = FALSE)
+  b <- sqlFetch(xlsFile, "a")
+  odbcCloseAll()
 
 # 針對資料做初步的探索 --------------------------------------------------------------
 dim() #取得資料維度
@@ -24,6 +24,9 @@ tail() #探索資料集後面幾筆的資料
 
 library(plyr) # 10大R必學package之一
 
+## 行合併及列合併
+rbind()
+cbind()
 ## 先針對NA資料作處裡
 na.omitmit()
 ## 若有需要，對變數做標準化
