@@ -27,12 +27,14 @@ R語言的三個重要面向:
   2.character string
   3.matrices(Much of R’s power comes from the various operations 
              you can perform on matrices;矩陣乘法透過"%*%")
-  4.
 
   
 
 NA and NULL #計算平均數時，NULL會被跳過，因為被當作不存在
 #NA則不會，因此計算不出來
+
+
+# 常用函數 --------------------------------------------------------------------
 
 seq() #產生向量,ex:seq(from=12,to=30,by=3),seq(from=1.1,to=2,length=10)
 example(line) #讓你知道函數大概怎麼用
@@ -56,6 +58,7 @@ identical(x,y) #測試兩個object是否相等
 
 paste() #string manipulation
 strsplit() #string manipulation
+as.matrix() #as系列的函數是用來做資料轉型的
 
 
 # lines的簡易用法 ---------------------------------------------------------------
@@ -65,5 +68,25 @@ plot(height,weight,pch=2,col=2) #pch是用來改圖釋的
 lines(height,22.5*height^2,col=3)
 
 
+# 備註 ----------------------------------------------------------------------
+
+有時從矩陣取出子矩陣時會讓子矩陣變成是向量，而非矩陣
+這樣的情形會發生在僅有取出一列或一欄的矩陣資料時
+  解決方法:透過drop引數設為FALSE
+  z
+      [,1] [,2]
+  [1,] 1    5
+  [2,] 2    6
+  [3,] 3    7
+  [4,] 4    8
+  
+  r <- z[2,, drop=FALSE]
+  r
+  [,1] [,2]
+  [1,] 2 6
+  
+  dim(r)
+  [1] 1 2
 
 
+  
