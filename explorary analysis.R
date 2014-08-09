@@ -16,7 +16,7 @@ str()
 attributes()
 class()
 mode()
-typeof()
+typeof()#check mode屬性
 head()
 tail()
 
