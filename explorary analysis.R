@@ -10,15 +10,15 @@ b <- sqlFetch(xlsFile, "a")
 odbcCloseAll()
 
 # 針對資料做初步的探索 --------------------------------------------------------------
-dim()
-names()
-str()
+dim() #取得資料維度
+names() #取得自變數名稱
+str() #structure
 attributes()
-class()
-mode()
+class() #告訴你這是什麼資料類別
+mode() #告訴你這是數值資料or字串or類別
 typeof()#check mode屬性
-head()
-tail()
+head() #探索資料集前面幾筆的資料
+tail() #探索資料集後面幾筆的資料
 
 # Data Manipulation and Review -----------------------------------------------------
 
